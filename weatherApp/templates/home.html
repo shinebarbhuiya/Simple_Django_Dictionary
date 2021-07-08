@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+
+    <h1>Shine's Dictionary App</h1>
+    <hr>
+    <form class="" method="GET" >
+        <input type="text" name="word">
+        <button type="submit">Submit</button>
+    </form>
+
+    
+    <h3>Word : {{data.word}}</h3>
+    <h3>Meaning : {{data.definition}}</h3>
+  
+    
+
+{% endblock content %}
+
