@@ -8,7 +8,7 @@ import requests
 
 def Home(request):
 
-    word = request.GET.get('word', 'shine')
+    word = request.GET.get('word', 'dictionary')
     url = f"https://api.dictionaryapi.dev/api/v2/entries/en_US/{word}"
 
 
@@ -24,5 +24,5 @@ def Home(request):
 
     context = { 'data' : payload}
 
-    return render(request, 'home.html', context)
+    return render(request, 'index.html', context)
 
