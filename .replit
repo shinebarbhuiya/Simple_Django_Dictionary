@@ -1,2 +1,2 @@
 language = "bash"
-run = "pip3 install -r requirements.txt; gunicorn --bind 0.0.0.0:3000 --workers 3 Dictionary:application"
+run = "pip3 install -r requirements.txt; gunicorn --bind 0.0.0.0:3000 --workers 3 Dictionary.wsgi:application"
